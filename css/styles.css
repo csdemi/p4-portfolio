@@ -1,52 +1,109 @@
 /* Your Website Styles */
-
-
-
-/* Gallery Stying */
-.gallery .control-button {
-  color: #ccc;
-  color: rgba(255, 255, 255, 0.4);
+body{
+  background: url("../img/paper.png");
 }
-
-.gallery .control-button:hover {
-  color: white;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-/*
-	Theme controls how everything looks in Gallery CSS.
-*/
-.gallery {
-  position: relative;
-}
-.gallery .item {
-  height: 400px;
-  overflow: hidden;
-  text-align: center;
-  background: #4d87e2;
-}
-.gallery .controls {
-  position: absolute;
-  bottom: -120px;
-  width: 100%;
+/* Primary Header*/
+h1{
+  font-family: 'Nova Square', cursive;
+  color:#0A0924;
   text-align: center;
 }
-
-.gallery .controls img {
-  border: 5px solid #000;
+h2,h3{
+  font-family: 'Quicksand', sans-serif;
+  color: #0E216C ;
 }
-
-.gallery .control-button {
-  display: inline-block;
-  margin: 0 .02em;
-  font-size: 3em;
+/*Body Text*/
+h1 + p{
   text-align: center;
+}
+p{
+  font-family: 'Ubuntu',sans-serif;
+  color: #C0260A;
+  letter-spacing: 2px;
+}
+/*Baseline Links*/
+a:link,
+a:visited{
+  text-transform: uppercase;
   text-decoration: none;
-  transition: color .1s;
+  font-style: italic;
 }
 
+/* Set Your Own Margin & Padding */
+h2, h3, p {
+  margin: 0;
+}
+
+/* Layout for Style Tile*/
+section {
+  margin: 20px 0;
+}
+div{
+  display: block;
+}
+  .gallery .control-button {
+    color: #C0260A;
+    color: rgba(255, 255, 255, 0.4);
+  }
+  
+  .gallery .control-button:hover {
+    color: white;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  /*
+    Theme controls how everything looks in Gallery CSS.
+  */
+  
+  
+  .gallery {
+    position: relative;
+  }
+  .gallery .item {
+    height: 400px;
+    overflow: hidden;
+    text-align: center;
+      border-bottom: 4px double rgb(192,38,10);
+    border-top: 4px double rgb(192,38,10);
+
+  }
+  
+  .gallery .controls {
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+    text-align: center;
+  
+  }
+  .gallery .controls img {
+    border: 3px solid rgb(147,170,255);
+    border-radius: 75px;
+    width: 50px;
+    margin: 0 10px;
+  }
+  .gallery .control-button {
+    display: inline-block;
+    margin: 0 .02em;
+    font-size: 3em;
+    text-align: center;
+    text-decoration: none;
+    transition: color .1s;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+section img {
+  -webkit-animation:pulse 1s infinite ease-in-out alternate;
+  -o-animation:pulse 1s infinite ease-in-out alternate;
+  animation: pulse 1s infinite ease-in-out alternate;
+}
+@-webkit-keyframes pulse {
+  from { transform: scale(0.8); }
+  to { transform: scale(1.2); }
+}
 
 /* Show Grid */
 .showgrid {
-	background: url("../img/grid-bg.png") repeat-y;
+  background: url("../img/grid-bg.png") repeat-y;
 }
