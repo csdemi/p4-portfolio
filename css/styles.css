@@ -58,7 +58,7 @@ div{
     position: relative;
   }
   .gallery .item {
-    height: 700px;
+    height: 600px;
     overflow: hidden;
     text-align: center;
     border-bottom: 4px double rgb(192,38,10);
