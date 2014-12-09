@@ -53,17 +53,15 @@ div{
   
   /*
     Theme controls how everything looks in Gallery CSS.
-  */
-  
-  
+  */ 
   .gallery {
     position: relative;
   }
   .gallery .item {
-    height: 400px;
+    height: 700px;
     overflow: hidden;
     text-align: center;
-      border-bottom: 4px double rgb(192,38,10);
+    border-bottom: 4px double rgb(192,38,10);
     border-top: 4px double rgb(192,38,10);
 
   }
